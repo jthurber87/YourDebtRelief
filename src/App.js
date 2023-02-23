@@ -78,7 +78,7 @@ export default function App() {
         <p>No savings:</p>
         <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 0.0191).toFixed()}</span> more than you owe currently</h3>
         <p>
-          <strong>{sliders.deposit > sliders.debt ? "0" : Math.ceil((sliders.debt * 1.15) / sliders.deposit)} months</strong> to pay off your current debt listed above.
+          <strong>{Math.ceil((sliders.debt * 1.15) / sliders.deposit)} months</strong> to pay off your current debt listed above.
         </p>
         <small>*Assumed average interest of 15%</small>
       </div>
@@ -90,7 +90,7 @@ export default function App() {
         <p>No savings:</p>
         <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 0.0255).toFixed()}</span> more than you owe currently</h3>
         <p>
-          <strong>{sliders.deposit > sliders.debt ? "0" : Math.ceil(((sliders.debt * 1.20) / sliders.deposit))} months</strong> to pay off your current debt listed above.
+          <strong>{Math.ceil(((sliders.debt * 1.20) / sliders.deposit))} months</strong> to pay off your current debt listed above.
         </p>
         <small>*Assumed average interest of 20%</small>
       </div>
