@@ -1,0 +1,45 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    background-color: #002656;
+    color: white;
+    padding: 5% 10%;
+}
+
+.total {
+    text-align: left;
+    background-color: white;
+    color: #002656;
+    padding: 2.5%;
+}
+
+.result-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    margin: 10px;
+}
+
+.green {
+    color: #058928
+}
+
+hr {
+    background-color: grey;
+    height: 2px;
+    margin: 0 5vw;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
