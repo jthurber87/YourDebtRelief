@@ -13,7 +13,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd debt-calculator
+  cd YourDebtRelief
 ```
 
 Install dependencies
@@ -27,3 +27,7 @@ Start the server
 ```bash
   npm run start
 ```
+
+## Visit Deployed Site
+
+Visit the deployed version [here](https://ydr-calculator.netlify.app/)
