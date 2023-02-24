@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YourDebtRelief/static/css/main.bc11fec7.css",
+    "main.js": "/YourDebtRelief/static/js/main.a52794ac.js",
+    "index.html": "/YourDebtRelief/index.html",
+    "main.bc11fec7.css.map": "/YourDebtRelief/static/css/main.bc11fec7.css.map",
+    "main.a52794ac.js.map": "/YourDebtRelief/static/js/main.a52794ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc11fec7.css",
+    "static/js/main.a52794ac.js"
+  ]
+}
