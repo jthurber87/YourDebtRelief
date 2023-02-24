@@ -1,12 +1,12 @@
 {
   "name": "create-react-skel",
   "version": "1.0.0",
-  "homepage": "https://jthurber87.github.io/YourDebtRelief",
   "bin": "./bin/cli.js",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.10",
+    "netlify-redirector": "^0.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
