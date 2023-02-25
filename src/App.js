@@ -33,6 +33,7 @@ export default function App() {
   // }
   return (
     <div className="App">
+      <img id="logo" src="https://yourdebtpartner.com/wp-content/uploads/2022/11/ydp-stacked.jpg" alt="YourDebtPartner Logo" />
       <div id="sliders">
         <h1>How Much Can You Save?</h1>
         <br></br>
@@ -59,8 +60,7 @@ export default function App() {
       </div>
       <div class="total">
         <div class="result-header">
-          <h2>YourDebtPartner</h2>
-          <img src="https://yourdebtpartner.com/wp-content/uploads/2022/11/ydp-stacked.jpg" alt="YourDebtPartner Logo" />
+          <h2>Debt Settlement</h2>
         </div>
         <p>Your monthly program deposit:</p>
         <h3>${sliders.deposit}</h3>
@@ -72,7 +72,9 @@ export default function App() {
       </div>
       <hr />
       <div class="total">
-        <h2 style={{ textAlign: "center", margin: "5%" }}>Debt Consolidation or Credit Counseling</h2>
+        <div className="result-header">
+          <h2 style={{ textAlign: "center", margin: "5%" }}>Debt Consolidation or Credit Counseling</h2>
+        </div>
         <p>Your monthly payment:</p>
         <h3>${sliders.deposit}</h3>
         <p>No savings:</p>
@@ -84,7 +86,9 @@ export default function App() {
       </div>
       <hr />
       <div class="total">
-        <h2 style={{ textAlign: "center", margin: "5%" }}>Pay Minimum Monthly Payments</h2>
+        <div class="result-header">
+          <h2 style={{ textAlign: "center", margin: "5%" }}>Pay Minimum Monthly Payments</h2>
+        </div>
         <p>Your monthly payment:</p>
         <h3>${sliders.deposit}</h3>
         <p>No savings:</p>
