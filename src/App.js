@@ -41,7 +41,7 @@ export default function App() {
           name="debt"
           value={sliders.debt}
           min={100}
-          max={10000}
+          max={100000}
           onChange={handleChange}
         ></Slider>
         <p>${sliders.debt}</p>
@@ -52,7 +52,7 @@ export default function App() {
           name="deposit"
           value={sliders.deposit}
           min={50}
-          max={10000}
+          max={100000}
           onChange={handleChange}
         ></Slider>
         <p>${sliders.deposit}</p>
