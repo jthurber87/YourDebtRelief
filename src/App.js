@@ -53,7 +53,7 @@ export default function App() {
           name="deposit"
           value={sliders.deposit}
           min={50}
-          max={100000}
+          max={5000}
           onChange={handleChange}
         ></Slider>
         <p>${sliders.deposit}</p>
