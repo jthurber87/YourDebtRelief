@@ -76,3 +76,13 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.min-max {
+    width: 75px
+}

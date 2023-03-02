@@ -34,7 +34,7 @@ export default function App() {
         <section>
           <p>How much debt do you owe?</p>
           <div className="slider-box">
-            <p>$7,500</p>
+            <p className="min-max">$7,500</p>
             <Slider
               className="slider"
               name="debt"
@@ -43,14 +43,14 @@ export default function App() {
               max={100000}
               onChange={handleChange}
             ></Slider>
-            <p>$100k</p>
+            <p className="min-max">$100k</p>
           </div>
           <p>$<input name="debt" type="number" min={7500} onChange={handleChange} onBlur={checkValue} value={sliders.debt}></input></p>
         </section>
         <section>
           <p>What is your desired monthly program deposit?</p>
           <div className="slider-box">
-            <p>$50</p>
+            <p className="min-max">$50</p>
             <Slider
               className="slider"
               name="deposit"
@@ -59,7 +59,7 @@ export default function App() {
               max={2000}
               onChange={handleChange}
             ></Slider>
-            <p>$2,000</p>
+            <p className="min-max">$2,000</p>
           </div>
           <p>$<input name="deposit" type="number" min={50} onChange={handleChange} onBlur={checkValue} value={sliders.deposit}></input></p>
         </section>
