@@ -64,20 +64,20 @@ export default function App() {
           <p>$<input name="deposit" type="number" min={50} onChange={handleChange} onBlur={checkValue} value={sliders.deposit}></input></p>
         </section>
       </div>
-      <div class="total">
-        <div class="result-header">
+      <div className="total">
+        <div className="result-header">
           <h2>Debt Settlement</h2>
         </div>
         <p>Your monthly program deposit:</p>
         <h3>${sliders.deposit}</h3>
         <p>Your savings:</p>
-        <h3><span class="green">${savings.toFixed()}</span> Savings</h3>
+        <h3><span className="green">${savings.toFixed()}</span> Savings</h3>
         <p>
           <strong>{months} months</strong> to pay off your current debt listed above.
         </p>
       </div>
       <hr />
-      <div class="total">
+      <div className="total">
         <div className="result-header">
           <h2 style={{ textAlign: "center", margin: "5%" }}>Debt Consolidation or Credit Counseling</h2>
         </div>
@@ -91,8 +91,8 @@ export default function App() {
         <small>*Assumed average interest of 15%</small>
       </div>
       <hr />
-      <div class="total">
-        <div class="result-header">
+      <div className="total">
+        <div className="result-header">
           <h2 style={{ textAlign: "center", margin: "5%" }}>Pay Minimum Monthly Payments</h2>
         </div>
         <p>Your monthly payment:</p>
