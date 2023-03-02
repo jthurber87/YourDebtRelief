@@ -4,7 +4,7 @@ import Slider from "@mui/material/Slider";
 
 export default function App() {
   const [sliders, setSliders] = useState({
-    debt: 100,
+    debt: 7500,
     deposit: 50
   });
 
@@ -12,25 +12,20 @@ export default function App() {
     setSliders({ ...sliders, [e.target.name]: e.target.value });
   }
 
+  function checkValue(e) {
+    if (e.target.name === "debt" && (e.target.value < 7500 || e.target.value > 100000)) {
+      alert("Please enter a number between $7,500 and $100,000")
+      setSliders({ ...sliders, debt: 7500 })
+    } else if (e.target.name === "deposit" && (e.target.value < 50 || e.target.value > 2000)) {
+      alert("Please enter a number between $50 and $2,000")
+      setSliders({ ...sliders, deposit: 50 })
+    }
+  }
+
   let savings = sliders.debt * 0.23; /* Please confirm formula */
   let timeline = (sliders.debt - savings) / sliders.deposit;
   let months = sliders.deposit > sliders.debt ? "0" : Math.ceil(timeline);
 
-  // Todo: Conditional rendering for progams based on calculation
-  // let programs;
-  // switch (sliders.debt) {
-  //   case sliders.debt < 1000:
-  //     programs = ["A"];
-  //     break;
-  //   case sliders.debt > 1000 && sliders.debt < 5000:
-  //     programs = ["B", "C"];
-  //     break;
-  //   case sliders.debt > 5000:
-  //     programs = ["C"];
-  //     break;
-  //   default:
-  //     break;
-  // }
   return (
     <div className="App">
       <img id="logo" src="https://yourdebtpartner.com/wp-content/uploads/2022/11/ydp-stacked.jpg" alt="YourDebtPartner Logo" />
@@ -50,7 +45,7 @@ export default function App() {
             ></Slider>
             <p>$100k</p>
           </div>
-          <p>${sliders.debt}</p>
+          <p>$<input name="debt" type="number" min={7500} onChange={handleChange} onBlur={checkValue} value={sliders.debt}></input></p>
         </section>
         <section>
           <p>What is your desired monthly program deposit?</p>
@@ -66,7 +61,7 @@ export default function App() {
             ></Slider>
             <p>$2,000</p>
           </div>
-          <p>${sliders.deposit}</p>
+          <p>$<input name="deposit" type="number" min={50} onChange={handleChange} onBlur={checkValue} value={sliders.deposit}></input></p>
         </section>
       </div>
       <div class="total">

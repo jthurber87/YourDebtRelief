@@ -58,5 +58,21 @@ h3 {
 }
 
 .slider {
-    margin: 15px;
+    margin: 6px 15px;
+    font-family: inherit;
+}
+
+input {
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: right;
+    width: 50px;
+}
+
+/* Gets rid of input arrows for number type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
