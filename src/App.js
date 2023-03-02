@@ -36,27 +36,38 @@ export default function App() {
       <img id="logo" src="https://yourdebtpartner.com/wp-content/uploads/2022/11/ydp-stacked.jpg" alt="YourDebtPartner Logo" />
       <div id="sliders">
         <h1>How Much Can You Save?</h1>
-        <br></br>
-        <p>How much debt do you owe?</p>
-        <Slider
-          name="debt"
-          value={sliders.debt}
-          min={7500}
-          max={100000}
-          onChange={handleChange}
-        ></Slider>
-        <p>${sliders.debt}</p>
-        <br></br>
-        <br></br>
-        <p>What is your desired monthly program deposit?</p>
-        <Slider
-          name="deposit"
-          value={sliders.deposit}
-          min={50}
-          max={2000}
-          onChange={handleChange}
-        ></Slider>
-        <p>${sliders.deposit}</p>
+        <section>
+          <p>How much debt do you owe?</p>
+          <div className="slider-box">
+            <p>$7,500</p>
+            <Slider
+              className="slider"
+              name="debt"
+              value={sliders.debt}
+              min={7500}
+              max={100000}
+              onChange={handleChange}
+            ></Slider>
+            <p>$100k</p>
+          </div>
+          <p>${sliders.debt}</p>
+        </section>
+        <section>
+          <p>What is your desired monthly program deposit?</p>
+          <div className="slider-box">
+            <p>$50</p>
+            <Slider
+              className="slider"
+              name="deposit"
+              value={sliders.deposit}
+              min={50}
+              max={2000}
+              onChange={handleChange}
+            ></Slider>
+            <p>$2,000</p>
+          </div>
+          <p>${sliders.deposit}</p>
+        </section>
       </div>
       <div class="total">
         <div class="result-header">

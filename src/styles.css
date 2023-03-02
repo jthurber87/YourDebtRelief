@@ -12,7 +12,7 @@
     height: 50vh;
     background-color: #002656;
     color: white;
-    padding: 5% 10%;
+    padding: 2.5% 5%;
 }
 
 .total {
@@ -49,4 +49,14 @@ h3 {
     display: block;
     width: 150px;
     margin: 5px;
+}
+
+.slider-box {
+    display: flex;
+    width: 80vw;
+    align-items: center ;
+}
+
+.slider {
+    margin: 15px;
 }
