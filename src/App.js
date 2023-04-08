@@ -23,8 +23,8 @@ export default function App() {
   }
 
   let savings = sliders.debt * 0.23; /* Please confirm formula */
-  let timeline = (sliders.debt - savings) / sliders.deposit;
-  let months = sliders.deposit > sliders.debt ? "0" : Math.ceil(timeline);
+  let timeline = (sliders.debt / sliders.deposit) * 0.77;
+  let months = Math.ceil(timeline);
 
   return (
     <div className="App">
