@@ -22,10 +22,6 @@ export default function App() {
     }
   }
 
-  let savings = sliders.debt * 0.23; /* Please confirm formula */
-  let timeline = (sliders.debt / sliders.deposit) * 0.77;
-  let months = Math.ceil(timeline);
-
   return (
     <div className="App">
       <img id="logo" src="https://yourdebtpartner.com/wp-content/uploads/2022/11/ydp-stacked.jpg" alt="YourDebtPartner Logo" />
@@ -71,9 +67,9 @@ export default function App() {
         <p>Your monthly program deposit:</p>
         <h3>${sliders.deposit}</h3>
         <p>Your savings:</p>
-        <h3><span className="green">${savings.toFixed()}</span> Savings</h3>
+        <h3><span className="green">${(sliders.debt * 0.23).toFixed()}</span> Savings</h3>
         <p>
-          <strong>{months} months</strong> to pay off your current debt listed above.
+          <strong>{Math.ceil(sliders.debt * 0.78 / sliders.deposit)} months</strong> to pay off your current debt listed above.
         </p>
       </div>
       <hr />
@@ -84,9 +80,9 @@ export default function App() {
         <p>Your monthly payment:</p>
         <h3>${sliders.deposit}</h3>
         <p>No savings:</p>
-        <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 0.0191).toFixed()}</span> more than you owe currently</h3>
+        <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 0.57912).toFixed()}</span> more than you owe currently</h3>
         <p>
-          <strong>{Math.ceil((sliders.debt * 1.15) / sliders.deposit)} months</strong> to pay off your current debt listed above.
+          <strong>{Math.ceil(sliders.debt * 1.58 / sliders.deposit)} months</strong> to pay off your current debt listed above.
         </p>
         <small>*Assumed average interest of 15%</small>
       </div>
@@ -98,9 +94,9 @@ export default function App() {
         <p>Your monthly payment:</p>
         <h3>${sliders.deposit}</h3>
         <p>No savings:</p>
-        <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 0.0255).toFixed()}</span> more than you owe currently</h3>
+        <h3>You'll pay <span style={{ color: "red" }}>${(sliders.debt * 1.168).toFixed()}</span> more than you owe currently</h3>
         <p>
-          <strong>{Math.ceil(((sliders.debt * 1.20) / sliders.deposit))} months</strong> to pay off your current debt listed above.
+          <strong>{Math.ceil((sliders.debt * 2.168 / sliders.deposit) / 12)} years</strong> to pay off your current debt listed above.
         </p>
         <small>*Assumed average interest of 20%</small>
       </div>
